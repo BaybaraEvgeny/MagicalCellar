@@ -1,5 +1,6 @@
 package com.magicalcellar
 
+import android.app.Fragment
 import android.app.PendingIntent.getActivity
 import android.content.ContentValues
 import android.os.Bundle

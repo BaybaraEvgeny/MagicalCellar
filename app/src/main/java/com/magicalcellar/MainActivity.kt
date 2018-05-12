@@ -62,6 +62,22 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         //calling the method displayselectedscreen and passing the id of selected menu
         displaySelectedScreen(item.itemId)
         //make this method blank
+        /*var fragment : Fragment? = null
+        if (item.itemId == R.id.nav_achievements) {
+            //val intent = Intent(this, Achievements::class.java)
+            //startActivity(intent)
+            fragment = Achievements()
+        }
+        //replacing the fragment
+        if (fragment != null) {
+            val ft = supportFragmentManager.beginTransaction()
+            ft.replace(R.id.content_main, fragment)
+            ft.commit()
+        }
+
+        val drawer = findViewById<View>(R.id.drawer_layout) as DrawerLayout
+        drawer.closeDrawer(GravityCompat.START)*/
+
         return true
     }
 
@@ -73,6 +89,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         //initializing the fragment object which is selected
         when (itemId) {
             R.id.nav_wine_collection -> fragment = WineList()
+            R.id.nav_achievements -> fragment = Achievements()
         }
 
         //replacing the fragment

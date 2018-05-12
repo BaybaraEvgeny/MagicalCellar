@@ -23,6 +23,7 @@
             android:name=".AddWineActivity"
             android:label="@string/title_activity_add_wine"
             android:theme="@style/AppTheme" />
+        <activity android:name=".Achievements"></activity>
     </application>
 
 </manifest>
